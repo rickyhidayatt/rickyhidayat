@@ -1,0 +1,239 @@
+/* * {
+    border: #1f2020 solid 1px; */
+}
+.container {
+    margin : auto;
+    width : 1152px;
+}
+/* Navigasi Atas */
+.navigasitop a {
+    text-decoration: none;
+    padding-right: 40px;
+    padding-top: 30px;
+    font-size: 20px;
+    float: right;
+    font-weight: bold;
+}
+.navigasitop a:hover {
+    color: #0066FF;
+    background-color: #1f2020;
+    opacity: 0.8;
+    
+}
+
+/* Kolom perkenalan */
+.text-kolom h1 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 128px;
+}
+.kolom-tentang-saya {   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 700px;
+    height: auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-kolom button {
+    background-color: #286fb4;
+    color: #FFF;
+    padding: 7px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+.text-kolom button:hover {
+    background-color: #1f2020;
+    opacity: 0.8;
+}
+/* supaya text jadi 2 kontainer panggil di pembungkus DIV*/
+.perkenalan {
+   display: flex; 
+}
+/* Bagian ini ngedit gambar  */
+.bagian-foto {
+    padding-top: 128px;
+    margin-left: 14%;
+}
+/* bagian recent post */
+.kolom2konten {
+    display: flex;
+    flex-direction: column;
+    background-color: #b0dde4;
+    border-radius: 4px;
+}
+.headatas {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.headatas h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+}
+.headatas a {
+    text-decoration: none;
+    color: #286fb4;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.postbody {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.postjudul {
+    background-color: #f7f7f7f9;
+    margin: 0 20px 10px 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.postjudul h2 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tagl, .postjudul p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+.tagl a {
+    text-decoration: none;
+    color: #286fb4;
+    padding: 5px;
+    margin-left: 20px;
+}
+.tagl a:hover {
+    color: #0066FF;
+    background-color: #1f2020;
+    opacity: 0.8;
+}
+.fitur {
+    display: flex;
+    justify-content: space-between;
+    padding:20px;   
+    border-bottom: #286fb4 solid 1px;
+}
+.fitur-teks {
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fitur label {
+    background-color: #1f2020;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 5px;
+}
+.fitur a {
+    text-decoration: none;
+    color: #286fb4;
+    padding: 5px;
+    margin-left: 20px;
+}
+.fitur a:hover {
+    color: #0066FF;
+    background-color: #1f2020;
+    opacity: 0.8;
+}
+article h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+}
+
+/* footer website */
+.footer-copyright {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.socialmedia img {
+    padding: 10px;
+}
+.socialmedia {
+    margin-top: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+    .navigasitop {
+        display: flex;
+        justify-content: center;
+    }
+    .navigasitop a {
+        text-decoration: none;
+        padding-right: 40px;
+        padding-top: 30px;
+        font-size: 20px;
+       
+    }
+    .perkenalan {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bagian-foto {
+        padding-top: 20px;
+        margin-left: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    .text-kolom h1 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    .kolom2konten {
+        width: 100%;
+    }
+    .headatas {
+        padding-left: 10px;
+    }
+    .headatas h3 {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .postbody {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .postjudul {
+        margin: 0 10px 10px 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .postjudul h2 {
+        font-size: 20px;
+    }
+    .tagl, .postjudul p {
+        font-size: 14px;
+    }
+    .fitur {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .fitur-teks {
+        padding-left: 10px;
+    }
+    .fitur-image img {
+        width: 100%;
+    }
+    /* fotter */
+    .socialmedia img {
+        padding: 10px;
+    }
+}
